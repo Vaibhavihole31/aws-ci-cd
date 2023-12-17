@@ -13,6 +13,10 @@ app.get("/test", (req, res)=>{
     res.send("<h1>Hey I am Working....</h1>")
 })
 
+app.get("/health", (req, res)=>{
+    res.send("<h1>Awesome....</h1>")
+})
+
 const PORT = 3000;
 app.listen(PORT, ()=>{
     console.log(`Server is listening on ${PORT}`)
